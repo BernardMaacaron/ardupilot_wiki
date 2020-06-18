@@ -76,7 +76,7 @@ There are several things that the pilot can do to minimise the risk during the e
 1. The pilot should conduct a motor number and orientation check (see :ref:`Checking the motor numbering with the Mission Planner Motor test <connect-escs-and-motors_testing_motor_spin_directions>`). Care should be taken to ensure that the correct frame type is selected. Incorrect frame type can result in a very fast yaw rotation or complete loss of control. Take note of the output percentage required to spin the propellers and ensure that:
 
 - :ref:`MOT_SPIN_ARM <MOT_SPIN_ARM>` is set high enough to spin the motors cleanly.
-- :ref:`MOT_SPIN_MIN <MOT_SPIN_MIN>` is set high enough to spin the motors win a minimal level of thrust.
+- :ref:`MOT_SPIN_MIN <MOT_SPIN_MIN>` is set high enough to spin the motors with a minimal level of thrust.
 
 2. All flights after a significant tuning change should be done in Stabilize. Stabilize provides the pilot with significantly more control over the aircraft in the event that the attitude controllers are unstable.
 3. The pilot should not take off in AltHold until the altitude controller has been tested in flight. This should be done by taking off in Stabilize and switching to Alt Hold. While Alt Hold is rarely a problem unless the aircraft has a very low hover throttle.
@@ -119,7 +119,7 @@ Next section will explain how to remove the oscillations.
 Initial aircraft tune
 ---------------------
 
-The first priority when tuning an multirotor aircraft is to establish a stable tune, free of oscillations, that can be used to do further tests.
+The first priority when tuning a multirotor aircraft is to establish a stable tune, free of oscillations, that can be used to do further tests.
 
 1. Arm the aircraft in STABILIZE
 2. Increase the throttle slowly until the aircraft leaves the ground
@@ -135,7 +135,7 @@ f. :ref:`ATC_RAT_RLL_D <ATC_RAT_RLL_D__AC_AttitudeControl_Multi>`
 
 This process is repeated until the aircraft can hover without oscillations being detectable visually or audibly.
 
-If the aircraft has very long or flexible landing gear then you may need to leave the ground before ground resonance stops.
+If the aircraft has very long or flexible landing gear, then you may need to leave the ground before ground resonance stops.
 
 Be aware that in this state the aircraft may be very slow to respond to large control inputs and disturbances. The pilot should be extremely careful to put minimal stick inputs into the aircraft to avoid the possibility of a crash.
 
@@ -146,7 +146,7 @@ This test will allow to test the altitude controller and ensure the stability of
 
 1. Check :ref:`MOT_HOVER_LEARN <MOT_HOVER_LEARN>` is set to 2. This will allow the controller to learn by itself the correct hover value when flying.
 
-2. Take off in STABILIZE and increase altitude to 5m. Switch to AltHold and be ready to switch back to STABILIZE. If the aircraft is hovering at a very low hover throttle value you may hear a reasonably fast oscillation in the motors. Ensure the aircraft has spent at least 30 seconds in hover to let the hover throttle parameter converge to the correct value. Land and disarm the aircraft.
+2. Take off in STABILIZE and increase altitude to 5m. Switch to AltHold and be ready to switch back to STABILIZE. If the aircraft is hovering at a very low hover throttle value, you may hear a reasonably fast oscillation in the motors. Ensure the aircraft has spent at least 30 seconds in hover to let the hover throttle parameter converge to the correct value. Land and disarm the aircraft.
 
 3. Set these parameters on ground and preferably disarm  (A confident pilot could set them in flight with GCS or CH6 tuning knob):
 
